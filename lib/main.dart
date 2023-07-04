@@ -18,24 +18,15 @@ class MyApp extends StatelessWidget {
           title: const Text("Simple App"),
         ),
         body: Center(
-          child: TextButton(
-
-            style: TextButton.styleFrom(
-                primary: Colors.black,
-                backgroundColor: Colors.lightGreen,
-                // splashColor: Colors.yellow,
-                padding: const EdgeInsetsDirectional.symmetric(
-                    horizontal: 10.0, vertical: 15.0),
-                shape: const BeveledRectangleBorder(
-                    side: BorderSide(
-                        width: 1.0, color: Colors.pink, strokeAlign: 5.0)),
-                elevation: 10.0,
-            ),
+          child: IconButton(
             onPressed: () {},
-            child: const Text(
-              'TextButton',
+            icon: const Icon(
+              Icons.add_a_photo,
             ),
-          ),
+            iconSize: 30.0,
+            splashColor: Colors.red,
+            tooltip: "Add A Image",
+          )
         ),
       ),
     );
